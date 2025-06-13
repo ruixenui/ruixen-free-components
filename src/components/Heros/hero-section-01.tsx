@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Github, Settings2, Sparkles, Zap } from "lucide-react";
-import DotPattern from "@/components/magicui/dot-pattern";
+import DotPattern from "@/components/dot-pattern";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
