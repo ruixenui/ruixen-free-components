@@ -20,7 +20,6 @@ interface FAQItem {
 interface Accordion_03Props {
   data: FAQItem[];
   className?: string;
-  timestamp?: string;
   questionClassName?: string;
   answerClassName?: string;
 }
@@ -59,7 +58,6 @@ export default function Accordion_03({
     }
   ],
   className,
-  timestamp = "Every day, 9:01 AM",
   questionClassName,
   answerClassName,
 }: Accordion_03Props) {
@@ -120,11 +118,6 @@ export default function Accordion_03({
     <div ref={containerRef} className={cn("max-w-4xl mx-auto text-center py-16 h-[300vh]", className)}>
       <h1 className="text-3xl font-bold mb-2">Frequently Asked Questions</h1>
       <p className="text-muted-foreground mb-6">Find answers to common questions about our graphic assets, components, and licensing.</p>
-
-      {timestamp && (
-        <div className="mb-4 text-sm text-muted-foreground">{timestamp}</div>
-      )}
-
       <Accordion.Root
         type="single"
         collapsible
